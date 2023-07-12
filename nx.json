@@ -14,5 +14,10 @@
         "accessToken": "OGQ4ODdhZGUtMjAyMi00M2VkLWJhODMtODMyMDY3NzhjNjYxfHJlYWQtd3JpdGU="
       }
     }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    }
   }
 }

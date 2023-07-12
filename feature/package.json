@@ -1,0 +1,22 @@
+{
+  "name": "@moal/feature",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.cjs",
+  "typings": "build/index.d.ts",
+  "scripts": {
+    "start": "ts-node-dev --respawn --watch --cls --files src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@moal/utils": "*"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.2",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.26.2",
+    "rollup-plugin-sourcemaps": "^0.6.3"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@moal/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.cjs",
+  "scripts": {
+    "build": "rimraf build && rollup -c rollup.config.js --bundleConfigAsCjs",
+    "start": "ts-node-dev --respawn --watch --cls --files src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "build"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./build/index.d.ts",
+      "require": "./build/index.cjs"
+    }
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.2",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.26.2",
+    "rollup-plugin-sourcemaps": "^0.6.3"
+  }
+}

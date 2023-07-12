@@ -1,15 +1,24 @@
 {
-  "name": "@moal-pre-ui",
+  "name": "moal-pre-ui",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
   "devDependencies": {
+    "@types/node": "^20.4.1",
     "nx": "16.5.1",
-    "nx-cloud": "latest"
+    "nx-cloud": "latest",
+    "rollup-plugin-tsconfig-paths": "^1.5.1",
+    "ts-node-dev": "^2.0.0"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "workspaces": {
+    "packages": [
+      "common-ui",
+      "feature",
+      "utils"
+    ]
+  },
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
 }
