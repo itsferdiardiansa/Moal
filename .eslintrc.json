@@ -1,6 +1,6 @@
 {
-  "extentds": [
-    "@moal/eslint-config"
+  "extends": [
+    "@moal/eslint-config/base.json"
   ]
 }
 

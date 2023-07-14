@@ -18,7 +18,11 @@
     "build": "tsc",
     "dev": "ts-node-dev --respawn --watch --cls --files src/index.ts",
     "test": "jest",
-    "test:watch": "jest --watch --verbose=false"
+    "test:watch": "jest --watch --verbose=false",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "prettier --ignore-path .gitignore --check \"**/*.+(js|ts|json)\"",
+    "format:write": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
   },
   "devDependencies": {
     "ts-node-dev": "^2.0.0"

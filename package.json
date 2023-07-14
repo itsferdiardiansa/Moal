@@ -10,10 +10,10 @@
   },
   "scripts": {
     "prepare": "husky install && chmod ug+x .husky/*",
-    "format": "pnpm prettier --write . '**/*.{js,ts,tsx}'",
-    "format:check": "prettier --check . '**/*.{js,ts,tsx}'",
     "lint": "pnpm nx run-many -t lint",
-    "lint:fix": "pnpm nx run-many -t lint --fix",
+    "lint:fix": "pnpm nx run-many -t lint:fix",
+    "format": "pnpm nx run-many -t format --fix",
+    "format:write": "pnpm nx run-many -t format:write",
     "test": "pnpm nx run-many -t test"
   },
   "devDependencies": {
@@ -24,6 +24,12 @@
     "@nx/js": "^16.5.2",
     "@nx/react": "^16.5.2",
     "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-watch": "^8.0.0",
     "husky": "^8.0.0",
     "jest": "^29.6.1",
     "lint-staged": "^13.2.3",
