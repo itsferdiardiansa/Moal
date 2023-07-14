@@ -1,24 +1,40 @@
 {
-  "name": "moal-pre-ui",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {},
+  "name": "moal",
+  "version": "1.0.0",
   "private": true,
+  "license": "MIT",
+  "author": {
+    "email": "ferdiardiansa@gmail.com",
+    "name": "Ferdi Ardiansa",
+    "url": "https://github.com/itsferdiardiansa"
+  },
+  "scripts": {
+    "prepare": "husky install && chmod ug+x .husky/*",
+    "format": "pnpm prettier --write . '**/*.{js,ts,tsx}'",
+    "format:check": "prettier --check . '**/*.{js,ts,tsx}'",
+    "lint": "pnpm nx run-many -t lint",
+    "lint:fix": "pnpm nx run-many -t lint --fix",
+    "test": "pnpm nx run-many -t test"
+  },
   "devDependencies": {
-    "@types/node": "^20.4.1",
+    "@moal/eslint-config": "workspace:^",
+    "@moal/tsconfig": "workspace:^",
+    "@nx/js": "^16.5.2",
+    "@nx/react": "^16.5.2",
+    "@types/node": "^20.4.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
+    "nodemon": "^3.0.1",
     "nx": "16.5.1",
     "nx-cloud": "latest",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
     "rollup-plugin-tsconfig-paths": "^1.5.1",
-    "ts-node-dev": "^2.0.0"
-  },
-  "workspaces": {
-    "packages": [
-      "common-ui",
-      "feature",
-      "utils"
-    ]
-  },
-  "dependencies": {
     "typescript": "^5.1.6"
-  }
+  },
+  "engines": {
+    "node": ">=v18.15.0",
+    "pnpm": ">=8.6.7"
+  },
+  "packageManager": "pnpm@7.18.0"
 }

@@ -1,0 +1,25 @@
+{
+  "name": "@moal/utils",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": {
+    "email": "ferdiardiansa@gmail.com",
+    "name": "Ferdi Ardiansa",
+    "url": "https://github.com/itsferdiardiansa"
+  },
+  "scripts": {
+    "prebuild": "pnpm clear && rimraf dist",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --watch --cls --files src/index.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0"
+  }
+}
