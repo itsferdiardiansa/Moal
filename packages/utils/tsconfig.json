@@ -3,6 +3,10 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
+    "lib": [
+      "DOM",
+      "ES2017"
+    ]
     
   },
   "include": ["src/**/*.ts"]
