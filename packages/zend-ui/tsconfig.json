@@ -1,0 +1,21 @@
+{
+  // "extends": "@moal/tsconfig/base.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "dist",
+    "lib": [
+      "DOM", 
+      "ES2017"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "declaration": false,
+    "declarationMap": false,
+    "paths": {
+      "@/*": ["*"],
+      "@component": ["./components"],
+      "@constant": ["./constants"]
+    }
+  }
+}
+  
