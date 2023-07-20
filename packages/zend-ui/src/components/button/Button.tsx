@@ -1,9 +1,14 @@
-import { ButtonContainer } from './ButtonStyle'
+import { VariantTypes, ButtonContainer } from './ButtonStyle'
 
-const Button = () => {
+interface ButtonProps {
+  variant: VariantTypes
+  label: string
+}
+
+const Button = ({ variant = 'primary', label }) => {
   return (
-    <ButtonContainer>
-      <button>Hello</button>
+    <ButtonContainer $variant={variant}>
+      <button>{label}</button>
     </ButtonContainer>
   )
 }

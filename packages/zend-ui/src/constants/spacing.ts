@@ -1,10 +1,8 @@
-const SPACING = {
-  spacing2ExtraSmall: '4px',
-  spacingExtraSmall: '8px',
-  spacingSmall: '12px',
-  spacingMedium: '16px',
-  spacingLarge: '24px',
-  spacing2ExtraLarge: '32px'  
+export const SPACING = {
+  extra2Small: '4px',
+  extraSmall: '8px',
+  small: '12px',
+  medium: '16px',
+  large: '24px',
+  extra2Large: '32px',
 }
-
-export default SPACING

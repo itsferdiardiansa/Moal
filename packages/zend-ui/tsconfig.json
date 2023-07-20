@@ -3,10 +3,7 @@
   "compilerOptions": {
     "baseUrl": "src",
     "outDir": "dist",
-    "lib": [
-      "DOM", 
-      "ES2017"
-    ],
+    "lib": ["DOM", "ES2017"],
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "declaration": false,
@@ -18,4 +15,3 @@
     }
   }
 }
-  

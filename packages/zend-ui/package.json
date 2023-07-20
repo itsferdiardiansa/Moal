@@ -7,7 +7,11 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "pnpm run lint --fix",
+    "format": "prettier --ignore-path .gitignore --check \"**/*.+(js|ts|tsx|json)\"",
+    "format:write": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx|json)\""
   },
   "keywords": [
     "zend-ui",

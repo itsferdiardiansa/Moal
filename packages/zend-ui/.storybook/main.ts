@@ -8,7 +8,7 @@ const config = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    '@storybook/addon-styling'
+    '@storybook/addon-styling',
   ],
   framework: {
     name: '@storybook/react-vite',
@@ -19,8 +19,8 @@ const config = {
   },
   async viteFinal(config) {
     return mergeConfig(config, {
-      plugins: [tsConfigPaths()]
+      plugins: [tsConfigPaths()],
     })
-  }
+  },
 }
 export default config
