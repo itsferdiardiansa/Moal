@@ -14,7 +14,8 @@
     "lint:fix": "pnpm nx run-many -t lint:fix",
     "format": "pnpm nx run-many -t format",
     "format:write": "pnpm nx run-many -t format:write",
-    "test": "pnpm nx run-many -t test"
+    "test": "pnpm nx run-many -t test",
+    "zend": "pnpm nx storybook @moal/zend-ui"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.9",

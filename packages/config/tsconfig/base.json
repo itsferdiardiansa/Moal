@@ -4,7 +4,6 @@
     "target": "ES5",
     "moduleResolution": "Node",
     "declaration": true,
-    "declarationMap": true,
     "allowSyntheticDefaultImports": true,
     "importHelpers": true,
     "alwaysStrict": true,
@@ -17,5 +16,6 @@
     "noImplicitAny": false,
     "noImplicitThis": false,
     "strictNullChecks": false
-  }
+  },
+  "exclude": ["node_modules"]
 }

@@ -1,9 +1,11 @@
 {
   "extends": "@moal/tsconfig/base.json",
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "ES2017"],
     "rootDir": "src",
-    "outDir": "dist",
-    "lib": ["DOM", "ES2017"]
+    "outDir": "dist"
   },
   "include": ["src/**/*.ts"]
 }
