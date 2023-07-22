@@ -38,3 +38,16 @@ export const generateRandomAlphanumeric = (length: number = 5) => {
 
   return result.join('')
 }
+
+
+/**
+ * Parse string to integer with omitting the string char(s)
+ * 
+ * @param value 
+ * @returns 
+ */
+export const convertToNumber = (value: string) => {
+  const pattern = /[^0-9.]+/gi
+  
+  return +value.replace(pattern, '') 
+}

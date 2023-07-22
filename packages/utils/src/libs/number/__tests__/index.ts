@@ -1,5 +1,5 @@
 import { describe, it, expect } from '@jest/globals'
-import { formatCurrency, generateRandomAlphanumeric } from '../number'
+import { formatCurrency, generateRandomAlphanumeric, convertToNumber } from '../number'
 
 describe('sum module', () => {
   it('should convert the number to currency format', () => {
@@ -24,5 +24,12 @@ describe('sum module', () => {
     expect(generateRandomAlphanumeric().split('')).toEqual(
       expect.not.arrayContaining(pattern)
     )
+  })
+
+  it('should convert given string to number', () => {
+    expect(convertToNumber('.56')).toEqual(.56)
+    expect(convertToNumber('1.5')).toEqual(1.5)
+    expect(convertToNumber('2.6 degree Celsius')).toEqual(2.6)
+    expect(convertToNumber('2.6 * 111')).toEqual(2.6111)
   })
 })
